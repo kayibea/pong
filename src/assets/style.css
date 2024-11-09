@@ -1,0 +1,16 @@
+:root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#board {
+  border: 5mm solid rgb(255, 255, 255);
+  border-left: none;
+  border-right: none;
+  /* border-left: 1mm solid rgb(255, 255, 255); */
+  /* border-right: 1mm solid rgb(255, 255, 255); */
+}
