@@ -25,15 +25,10 @@ const keys = {
 const score = { player1: 0, player2: 0 };
 
 const ctx = canvas.getContext('2d')!;
-const ball = new Ball([Ball.BALL_WIDTH, Ball.BALL_HEIGHT], new Vec2(CANVAS_CENTER_X, CANVAS_CENTER_Y));
+const ball = new Ball(new Vec2(CANVAS_CENTER_X, CANVAS_CENTER_Y));
 
-const paddle1 = new Paddle(
-  [Paddle.PADDLE_WIDTH, Paddle.PADDLE_HEIGHT],
-  new Vec2(Paddle.PADDLE_WIDTH, CANVAS_CENTER_Y - Paddle.PADDLE_HEIGHT / 2),
-);
-
+const paddle1 = new Paddle(new Vec2(Paddle.PADDLE_WIDTH, CANVAS_CENTER_Y - Paddle.PADDLE_HEIGHT / 2));
 const paddle2 = new Paddle(
-  [Paddle.PADDLE_WIDTH, Paddle.PADDLE_HEIGHT],
   new Vec2(canvas.width - Paddle.PADDLE_WIDTH * 2, CANVAS_CENTER_Y - Paddle.PADDLE_HEIGHT / 2),
 );
 

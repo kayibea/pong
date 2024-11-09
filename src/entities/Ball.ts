@@ -7,7 +7,7 @@ export default class Ball extends Entity {
   public static readonly BALL_SPEED_X = 5;
   public static readonly BALL_SPEED_Y = 3;
 
-  constructor(size: [number, number], pos = Vec2.zero, velocity = new Vec2(Ball.BALL_SPEED_X, Ball.BALL_SPEED_Y)) {
-    super(size, pos, velocity);
+  constructor(pos = new Vec2(), velocity = new Vec2(Ball.BALL_SPEED_X, Ball.BALL_SPEED_Y)) {
+    super([Ball.BALL_WIDTH, Ball.BALL_HEIGHT], pos, velocity);
   }
 }
